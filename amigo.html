@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="img/logoCorp.png" alt="Logo"></a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="fundacion.html"> LA FUNDACIÓN</a></li>
+        <li><a href="amigo.html"> HAZTE AMIGOS</a></li>
+        <li><a href="noticias.html"> NOTICIAS</a></li>
+        <li><a href="contacto.html"> CONTACTO</a></li>
+        <li><i class="fas fa-user"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section id="subcripcionAmigo">
+      <h1 class="tituloSec">SUBSCRIBETE</h1>
+      <div class="subtodo">
+        <div class="subBotones">
+          <h2>HAZTE AMIGO</h2>
+          <button onclick="cambioEspecifico (this.value)" id="subJoven" value="personal-0-subJoven" class="subBotonBlanco">AMIGO JOVEN</button>
+          <button onclick="cambioEspecifico (this.value)" id="subEstudiante" value="personal-1-subEstudiante">AMIGO ESTUDIANTE</button>
+          <button onclick="cambioEspecifico (this.value)" id="subAlhambra" value="personal-2-subAlhambra">GUARDIÁN DE LA ALHAMBRA</button>
+          <button onclick="cambioEspecifico (this.value)" id="subAmiga" value="personal-3-subAmiga">FAMILIA AMIGA</button>
+          <button onclick="cambioEspecifico (this.value)" id="subCirculo" value="personal-4-subCirculo">CIRCULO 1238</button>
+          <button onclick="cambioEspecifico (this.value)" id="subEmpresa" value="empresa-0-subEmpresa">EMPRESAS</button>
+        </div>
+        <div class="subInfo">
+          <div class="subComunes">
+            <h2>Beneficios comunes</h2>
+            <ul>
+              <li>Newsletter: Información regular sobre las actividades de la Fundación.</li>
+              <li>Acceso a plataforma: Contenidos exclusivos para “amigos” a través del área privada.</li>
+              <li>
+                Desgravación fiscal (Real Decreto-Ley 6/2023 de 19 de diciembre):
+                <ul>
+                  <li>Particulares:</li>
+                  <ul>
+                    <li>Desgravación del 80% sobre los primeros 250€.</li>
+                    <li>Desgravación del 40% sobre el resto de cantidades.</li>
+                    <li>Límite máximo del 10% de la base imponible.</li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+            <p>Hasta 250€</p>
+            <div>
+              <div class="amigoMayor porcent">
+                <p>80%</p>
+              </div>
+            </div>
+            <p>Resto base (de 251€ en adelante)</p>
+            <div>
+              <div class="amigoMenor porcent">
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+          <div class="subEspecifico">
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="amigo.js"></script>
+</body>
+
+</html>
