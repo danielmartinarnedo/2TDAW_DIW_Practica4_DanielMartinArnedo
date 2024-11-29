@@ -99,7 +99,7 @@ footer {
   text-decoration: none;
 }
 .footerSocial a:hover {
-  color: #00aced; /* Adjust hover color */
+  color: #00aced;
 }
 
 
@@ -307,7 +307,6 @@ footer {
 }
 .formulario p{
   justify-self: center;
-  width: 60%;
   margin-bottom: 3%;
 }
 .formulario form{
@@ -327,7 +326,7 @@ footer {
 }
 .formInput::placeholder {
   color: white;
-  
+
 }
 .mensaje{
   height: 200px;
@@ -345,6 +344,20 @@ footer {
   width: 50%;
   text-align: start !important;
 }
+.formulario input[type=submit]{
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.formulario input[type=submit]:hover {
+  background-color: #fff;
+  color: black;
+}
 
 
   /*FUNDACION*/
@@ -354,12 +367,14 @@ footer {
   margin-bottom: 5%;
 }
 #somosFund>div{
-  width: 80%;
   display: flex;
   justify-self: center;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 3%;
+}
+#somosFund>div>p{
+  width: 50%;
 }
 #somosFund img{
   width: 70%;
